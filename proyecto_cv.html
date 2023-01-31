@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Eduardo Wood
+            <img src="imagenes/perfil.jpg" alt="Imagen de perfil" id="imagen_perfil"/>
+        </h1>
+    </header>
+    <div id="info_principal">
+        <div class="spinner" type="none"><img src="imagenes/mail.png" alt="Icono email" id="mail_icono" class="icono_perfil"></div>
+        <span id="mail" class="perfil">eduardo.wood@example.com</span>
+        <div class="spinner" type="none"><img src="imagenes/fecha.png" alt="Icono fecha de nacimiento" id="fecha_nacimiento_icono" class="icono_perfil"></div>
+        <span id="fecha_nacimiento" class="perfil">12/07/1945</span>
+        <div class="spinner" type="none"><img src="imagenes/direccion.png" alt="Icono direccion" id="direccion_icono" class="icono_perfil"></div>
+        <span id="direccion" class="perfil">Eduardo Rd 6162</span>
+        <div class="spinner" type="none"><img src="imagenes/telefono.png" alt="Icono Telefono" id="telefono_icono" class="icono_perfil"></div>
+        <span id="telefono" class="perfil">(290) 570 2755</span>
+    </div>
+    <div id="mi_info">
+
+        <div class="info_personal" id="sobre_mi"><h2>Sobre mi</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim excepturi sit debitis iure perferendis sunt minima deleniti fuga corporis iste numquam quae, fugiat a illum, cumque, eveniet provident hic quos!</p></div>
+        <div class="info_personal" id="fortalezas"><h2>Mis Fortalezas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut obcaecati minus harum, culpa nulla tenetur autem error, delectus dolorem doloribus qui ipsa eos illo. Repellat sunt id error illum.</p></div>
+        <div class="info_personal" id="exp_laboral"><h2>Experiencia Laboral</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quisquam delectus officiis a deserunt sit laborum, consectetur culpa quidem, autem architecto obcaecati dignissimos sed quae ab rerum quos nemo repellat!</p></div>
+        <div class="info_personal" id="educacion"><h2>Educación</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, cupiditate eos. Vero, possimus. Blanditiis architecto at fugit, repellendus vero saepe! Molestiae nisi sapiente explicabo saepe omnis minus consectetur deleniti molestias.</p></div>
+
+    </div>
+
+    <div class="formulario">
+        <h3>Formulario de contacto:</h3>
+        <form action="">
+            <label for="nombre"></label>
+                <input type="text" id="nombre_contacto" name="nombre" placeholder="Nombre" required>
+            <label for="telefono"></label>
+                <input type="tel" id="telefono_contacto" name="telefono" placeholder="Teléfono" required><br>
+            <label for="email"></label>
+                <input type="email" id="mail_contacto" name="email" placeholder="E-Mail" required><br>
+            <label for="mensaje"></label>
+                <textarea name="comentario" id="extra_contacto" cols="82" rows="20" required></textarea><br>
+            <button type="submit" id="enviar_contacto">Enviar</button>
+            <button type="reset" id="resetear_formulario">Cancelar </button>
+        </form>
+    </div>
+    <script src="funciones/functions.js"></script>
+</body>
+
+</html>
